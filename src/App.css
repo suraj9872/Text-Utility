@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.radius{
+  border-radius: 1.3cm;
+}
+
+.p{
+  display: inline;
+  padding-left: 0.3cm;
+  padding-right: 0.3cm;
+  border-radius: 1cm;
+}
+.color{
+  background-color: purple;
+}
