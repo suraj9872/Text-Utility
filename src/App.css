@@ -50,3 +50,17 @@
 .color{
   background-color: purple;
 }
+
+.rad{
+  border-radius: 1cm;
+}
+.rad2{
+  
+  border-style :solid;
+  border-color: black;
+  border-width: 0.001cm;
+}
+
+.bFunc{
+  display: flex;
+}
