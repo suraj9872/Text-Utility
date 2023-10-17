@@ -67,8 +67,6 @@ export default function TextArea(props) {
         navigator.clipboard.writeText(text.value);
     }
 
-   
-
 
 
     const [text, setText] = useState('');
@@ -92,8 +90,7 @@ export default function TextArea(props) {
                 <p >{0.08 * text.split(" ").length} Minutes reads</p>
                 <h3 >Preview</h3>
                
-                <p 
-                >{text}</p> 
+                <p>{text.length>0 ? text:'Enter something in the textbox to preview it here..'}</p> 
             </div>
 
             {/* <div className="container ">
