@@ -12,11 +12,13 @@ export default function TextArea(props) {
     const handleUpClick = () => {
         let sentence = text.toUpperCase();
         setText(sentence);
+        props.showAlert1("Converted to UpperCase!","sucess");
     }
     //Function for Lowercase to text
     const handleLowerCase = () => {
         let newsentence = text.toLowerCase();
         setText(newsentence);
+        props.showAlert1("Converted to LowerCase!","sucess");
     }
 
     //function for removing the space form text
@@ -24,12 +26,14 @@ export default function TextArea(props) {
         // let newText = text.replaceAll(" ", "");
         let newText = text.replace(/\s+/g, ' ').trim();
         setText(newText);
+        props.showAlert1("Remove extra spaces","sucess");
 
     }
     //function for clear the text
     const handleClearText = () => {
         let newText = "";
         setText(newText);
+        props.showAlert1("Clear the text","sucess");
     }
 
     // functtion for changing the font
@@ -65,6 +69,7 @@ export default function TextArea(props) {
         console.log(text);
         text.select();
         navigator.clipboard.writeText(text.value);
+        props.showAlert1("Copied to clipboard","sucess");
     }
 
 

@@ -35,12 +35,16 @@ function App() {
       msg: msg,
       type: type
     })
+
+    setTimeout(() => {
+      setAlert(null);
+    },2000);
   }
   return (
     <>
       <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
       <Alert alertmsg={alert} />
-      <TextArea mode={mode} />
+      <TextArea showAlert1={showAlert} mode={mode} />
       {/* <About/> */}
       <DarkMode />
     </>
